@@ -1,0 +1,15 @@
+PRE-INSTALL:
+sudo apt install gcc-aarch64-linux-gnu                                                                                                                                 319  sudo apt install qemu-system-aarch64                                                                                                                                   324  sudo apt install qemu-user  
+
+COMPILE:
+make
+
+RUN:
+make run
+
+CLEAN:
+make clean
+
+reference:
+https://www.youtube.com/watch?v=8NdrdxkBP3U&t=272s
+
