@@ -1,15 +1,15 @@
-PRE-INSTALL:
+# PRE-INSTALL:
 sudo apt install gcc-aarch64-linux-gnu                                                                                                                                 319  sudo apt install qemu-system-aarch64                                                                                                                                   324  sudo apt install qemu-user  
 
-COMPILE:
+or user docker with all these tools pre-installed:
+
+docker run -it amine2029/qemu-user-aarch64
+
+# COMPILE, RUN and CLEAN:
 make
-
-RUN:
 make run
-
-CLEAN:
 make clean
 
-reference:
+# REFERENCE
 https://www.youtube.com/watch?v=8NdrdxkBP3U&t=272s
 
